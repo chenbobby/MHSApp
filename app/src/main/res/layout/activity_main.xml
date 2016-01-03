@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bobchen.admin.mhsapp.MainActivity"
+    android:background="@drawable/mainbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="McClintock\nHigh School"
+        android:id="@+id/tvTitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="55sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:paddingTop="20dp"
+        android:shadowColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unofficial App By Bob Chen"
+        android:id="@+id/tvSubtitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:textColor="#ffffff" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find an event:"
+        android:id="@+id/tvListTitle"
+        android:layout_gravity="left"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:paddingTop="20dp"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvCategories" />
+
+</LinearLayout>

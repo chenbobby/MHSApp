@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bobchen.admin.mhsapp.FreshmenTab">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/tvCategory"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:background="#7c0908"
+        android:textColor="#ffffff"
+        android:elevation="@dimen/design_appbar_elevation"
+        android:layout_margin="10dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bobchen.admin.mhsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.bobchen.admin.mhsapp.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/mhslogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bobchen.admin.mhsapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bobchen.admin.mhsapp.singleListScreen" />
+        <activity android:name="com.bobchen.admin.mhsapp.FreshmenTab" />
+        <activity android:name="com.bobchen.admin.mhsapp.JVTab" />
+        <activity android:name="com.bobchen.admin.mhsapp.VarsityTab" />
+        <activity android:name="com.bobchen.admin.mhsapp.EventInfoScreen" />
+        <activity android:name="com.bobchen.admin.mhsapp.art_event_info_screen" />
+        <activity android:name="com.bobchen.admin.mhsapp.Tab3" />
+        <activity android:name="com.bobchen.admin.mhsapp.Tab2"/>
+
+        <!-- Connect to Parse
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="todrzejb8TJEbYGssO5XxBypKRtD0RlPsXisqIlY" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="yz7JHkzPaqqn5FKWdfZ6BQ0qbqHEZIqrbTuHORum" /-->
+
+    </application>
+
+</manifest>

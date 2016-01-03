@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bobchen.admin.mhsapp.EventInfoScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Rank"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/tvTeamRank"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MHS Team"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/tvMHSTeam"
+        android:layout_below="@id/tvTeamRank"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/tvVS"
+        android:layout_below="@+id/tvMHSTeam"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Team"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:id="@+id/tvOtherTeam"
+        android:layout_below="@+id/tvVS"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvOtherTeam"
+        android:id="@+id/titleBuffer" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ivCalendarIcon"
+        android:layout_below="@+id/titleBuffer"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/calendaricon"
+        android:contentDescription="Calendar Icon"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="25sp"
+        android:id="@+id/tvEventDate"
+        android:padding="10dp"
+        android:layout_below="@+id/titleBuffer"
+        android:layout_toRightOf="@+id/ivCalendarIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="25sp"
+        android:id="@+id/tvEventTime"
+        android:layout_below="@+id/titleBuffer"
+        android:layout_alignParentRight="true"
+        android:padding="10dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ivCalendarIcon"
+        android:id="@+id/dateTimeBuffer" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ivLocationIcon"
+        android:layout_below="@+id/dateTimeBuffer"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/locationicon"
+        android:contentDescription="Location Icon"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="25sp"
+        android:id="@+id/tvEventLocation"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/dateTimeBuffer"
+        android:layout_toRightOf="@+id/ivLocationIcon" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/ivLocationIcon"
+        android:id="@+id/locationBuffer" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/ticketIcon"
+        android:layout_below="@+id/locationBuffer"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ticketicon"
+        android:contentDescription="Ticket Icon"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admission"
+        android:textSize="25sp"
+        android:id="@+id/tvEventAdmission"
+        android:layout_below="@+id/locationBuffer"
+        android:layout_toRightOf="@+id/ticketIcon"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:padding="5dp" />
+
+</RelativeLayout>
