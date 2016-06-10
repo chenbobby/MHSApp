@@ -130,7 +130,7 @@ public class singleListScreen extends AppCompatActivity {
 
             //Retrieves all data from chosen group
             ParseQuery<ParseObject> query = ParseQuery.getQuery(pickedCategory.categoryName.replaceAll("\\s", ""));
-            query.orderByAscending("eventDate");
+            query.orderByAscending("eventDate"); //TODO: Check this line; it should be deleted.
 
             query.findInBackground(new FindCallback<ParseObject>() {
                 @Override

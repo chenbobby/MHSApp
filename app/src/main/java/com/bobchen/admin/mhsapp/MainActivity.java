@@ -31,10 +31,6 @@ public class MainActivity extends Activity {
         progressDialog.setCancelable(false);
         progressDialog.show();
 
-        //Connect and Initialize Parse
-        //Parse.enableLocalDatastore(this);
-        //Parse.initialize(this);
-
         final List<Category> listOfCategories = new ArrayList<Category>();
 
 

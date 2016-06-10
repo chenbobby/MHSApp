@@ -41,7 +41,7 @@ public class FreshmenTab extends Activity {
         final List<Event> listOfEvents = new ArrayList<Event>();
 
 
-        //Retrieves all data from BoysBasketballFreshmen
+        //Retrieves all data from picked group
         ParseQuery<ParseObject> query = ParseQuery.getQuery(pickedGroupName.replaceAll("\\s", ""));
         query.whereEqualTo("teamRank", "Freshmen");
         query.orderByAscending("eventDate");
